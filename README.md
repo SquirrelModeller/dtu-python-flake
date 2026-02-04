@@ -17,7 +17,7 @@ nix develop
 ```
 Or without cloning:
 ```bash
-nix develop github.com/SquirrelModeller/dtu-python-flake
+nix develop github:SquirrelModeller/dtu-python-flake
 ```
 
 ## Optional: direnv
