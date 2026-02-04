@@ -8,6 +8,23 @@ The flake exposes a `devShell` with Python 3.12, Jupyter, and common scientific 
 
 ## Usage
 
+### Recommended usage
+
+For DTU courses, the simplest workflow is to copy the flake into your course repository and let `direnv` handle the environment automatically.
+
+1. Copy `flake.nix` and `.envrc` into the root of your course project.
+2. From that directory, allow the environment:
+```bash
+direnv allow
+```
+3. Reload your IDE environment.
+
+At this point, the development environment is active. Python 3.12 and all packages are available.
+
+If you use VS Code, VSCodium, or any other IDE with a `direnv` extension installed, the environment will be picked up automatically after reloading the editor.
+
+
+
 ### Enter the development shell
 
 From the repository root:
@@ -20,21 +37,9 @@ Or without cloning:
 nix develop github:SquirrelModeller/dtu-python-flake
 ```
 
-## Optional: direnv
-
-
-This repository includes a minimal `.envrc` for use with `direnv`.
-
-If you have `direnv` installed, enable it once:
-
-```bash
-direnv allow
-```
-
 ### VS Code
 
 If you use VS Code, the direnv extension integrates automatically: https://marketplace.visualstudio.com/items?itemName=mkhl.direnv
-
 
 #### Automatic VS Code setup
 
