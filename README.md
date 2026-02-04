@@ -29,10 +29,15 @@ If you have `direnv` installed, enable it once:
 
 ```bash
 direnv allow
-````
+```
 
 ### VS Code
 
 If you use VS Code, the direnv extension integrates automatically: https://marketplace.visualstudio.com/items?itemName=mkhl.direnv
 
 
+#### Automatic VS Code setup
+
+A Nix flake providing a complete VS Code / VSCodium setup (including essential is available here:
+
+https://github.com/SquirrelModeller/squirrel-nixos/blob/main/modules/graphical/apps/vscodium.nix
